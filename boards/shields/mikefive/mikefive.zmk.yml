@@ -1,0 +1,8 @@
+file_format: "1"
+id: mikefive
+name: MIKEFIVE
+type: shield
+url: https://github.com/mikeholscher/zmk-config-mikefive
+requires: [pro_micro]
+features:
+  - keys

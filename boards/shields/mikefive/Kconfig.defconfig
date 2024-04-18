@@ -1,0 +1,6 @@
+if SHIELD_MIKEFIVE
+
+config ZMK_KEYBOARD_NAME
+    default "mikefive"
+
+endif

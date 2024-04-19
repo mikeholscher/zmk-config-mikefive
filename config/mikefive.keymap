@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -6,6 +7,17 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,8 +25,8 @@
             bindings = <
 &kp Q               &kp W           &kp F               &kp P             &kp B    &kp J      &kp L              &kp U                &kp Y            &kp SQT
 &mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G    &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
-&kp Z               &kp X           &kp C               &kp D             &kp V    &kp K      &kp H              &mt RALT COMMA       &mt RCTRL DOT    &mt RSHFT SLASH
-                                    &kp ESCAPE          &lt 1 SPACE       &kp TAB  &kp ENTER  &kp BACKSPACE      &kp DEL
+&kp Z               &kp X           &kp C               &kp D             &kp V    &kp K      &kp H              &kp COMMA            &kp PERIOD       &kp SLASH
+                                    &lt 3 ESCAPE        &lt 1 SPACE       &kp TAB  &kp ENTER  &lt 2 BACKSPACE    &kp DEL
             >;
         };
 
@@ -24,6 +36,24 @@
 &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp MINUS  &kp N4  &kp N5   &kp N6  &kp STAR
 &trans            &trans        &trans            &trans          &trans  &kp EQUAL  &kp N1  &kp N2   &kp N3  &kp FSLH
                                 &trans            &trans          &trans  &kp ENTER  &kp N0  &kp DOT
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&kp GRAVE      &trans           &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans           &trans             &trans         &trans
+&kp SEMICOLON  &kp PERCENT      &kp AMPERSAND  &kp LBKT              &kp RBKT               &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_COMMAND
+&kp BACKSLASH  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans           &trans             &trans         &trans
+                                &trans         &trans                &trans                 &trans  &trans           &trans
+            >;
+        };
+
+        Bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
+                &trans  &trans  &trans  &trans        &trans          &trans
             >;
         };
     };

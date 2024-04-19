@@ -14,7 +14,16 @@
 &kp Q               &kp W           &kp F               &kp P             &kp B    &kp J      &kp L              &kp U                &kp Y            &kp SQT
 &mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G    &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
 &kp Z               &kp X           &kp C               &kp D             &kp V    &kp K      &kp H              &mt RALT COMMA       &mt RCTRL DOT    &mt RSHFT SLASH
-                                    &kp ESCAPE          &kp SPACE         &kp TAB  &kp ENTER  &kp BACKSPACE      &kp DEL
+                                    &kp ESCAPE          &lt 1 SPACE       &kp TAB  &kp ENTER  &kp BACKSPACE      &kp DEL
+            >;
+        };
+
+        Number {
+            bindings = <
+&trans            &trans        &trans            &trans          &trans  &kp PLUS   &kp N7  &kp N8   &kp N9  &kp CARET
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp MINUS  &kp N4  &kp N5   &kp N6  &kp STAR
+&trans            &trans        &trans            &trans          &trans  &kp EQUAL  &kp N1  &kp N2   &kp N3  &kp FSLH
+                                &trans            &trans          &trans  &kp ENTER  &kp N0  &kp DOT
             >;
         };
     };

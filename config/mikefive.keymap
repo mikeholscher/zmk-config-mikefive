@@ -23,10 +23,10 @@
 
         Base {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B    &kp J      &kp L              &kp U                &kp Y            &kp SQT
-&mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G    &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
-&kp Z               &kp X           &kp C               &kp D             &kp V    &kp K      &kp H              &kp COMMA            &kp PERIOD       &kp SLASH
-                                    &lt 3 ESCAPE        &lt 1 SPACE       &kp TAB  &kp ENTER  &lt 2 BACKSPACE    &kp DEL
+&kp Q               &kp W           &kp F               &kp P             &kp B      &kp J      &kp L              &kp U                &kp Y            &kp SQT
+&mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G      &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
+&lt 4 Z             &kp X           &kp C               &kp D             &kp V      &kp K      &kp H              &kp COMMA            &kp PERIOD       &kp SLASH
+                                    &lt 3 ESCAPE        &lt 1 SPACE       &lt 4 TAB  &kp ENTER  &lt 2 BACKSPACE    &kp DEL
             >;
         };
 
@@ -54,6 +54,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
                 &trans  &trans  &trans  &trans        &trans          &trans
+            >;
+        };
+
+        Navigation {
+            bindings = <
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans     &trans     &trans     &trans     &trans  &trans  &trans          &trans          &trans           &trans
+                      &trans     &trans     &trans  &trans  &trans          &trans
             >;
         };
     };

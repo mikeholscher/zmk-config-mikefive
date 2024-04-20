@@ -32,10 +32,10 @@
 
         Number {
             bindings = <
-&trans            &trans        &trans            &trans          &trans  &kp PLUS   &kp N7  &kp N8   &kp N9  &kp CARET
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp MINUS  &kp N4  &kp N5   &kp N6  &kp STAR
-&trans            &trans        &trans            &trans          &trans  &kp EQUAL  &kp N1  &kp N2   &kp N3  &kp FSLH
-                                &trans            &trans          &trans  &kp ENTER  &kp N0  &kp DOT
+&kp CARET                  &kp NUMBER_7           &kp NUMBER_8               &kp NUMBER_9             &kp PLUS   &kp PLUS   &kp N7                    &kp N8                      &kp N9                  &kp CARET
+&mt LEFT_COMMAND ASTERISK  &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp MINUS  &kp MINUS  &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_COMMAND ASTERISK
+&kp SLASH                  &kp NUMBER_1           &kp NUMBER_2               &kp NUMBER_3             &kp EQUAL  &kp EQUAL  &kp N1                    &kp N2                      &kp N3                  &kp FSLH
+                                                  &kp PERIOD                 &trans                   &kp ENTER  &kp ENTER  &kp N0                    &kp DOT
             >;
         };
 

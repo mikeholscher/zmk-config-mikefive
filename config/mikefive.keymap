@@ -23,10 +23,10 @@
 
         Base {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B      &kp J      &kp L              &kp U                &kp Y            &kp SQT
-&mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G      &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
-&lt 4 Z             &kp X           &kp C               &kp D             &kp V      &kp K      &kp H              &kp COMMA            &kp PERIOD       &kp SLASH
-                                    &lt 3 ESCAPE        &lt 1 SPACE       &lt 4 TAB  &kp ENTER  &lt 2 BACKSPACE    &kp DEL
+&kp Q               &kp W           &kp F               &kp P             &kp B      &kp J        &kp L              &kp U                &kp Y            &kp SQT
+&mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G      &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O
+&lt 3 Z             &kp X           &kp C               &kp D             &kp V      &kp K        &kp H              &kp COMMA            &kp PERIOD       &kp SLASH
+                                    &kp ESCAPE          &lt 3 SPACE       &lt 1 TAB  &lt 4 ENTER  &lt 2 BACKSPACE    &kp DEL
             >;
         };
 
@@ -35,25 +35,16 @@
 &kp CARET                  &kp NUMBER_7           &kp NUMBER_8               &kp NUMBER_9             &kp PLUS   &kp PLUS   &kp N7                    &kp N8                      &kp N9                  &kp CARET
 &mt LEFT_COMMAND ASTERISK  &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp MINUS  &kp MINUS  &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_COMMAND ASTERISK
 &kp SLASH                  &kp NUMBER_1           &kp NUMBER_2               &kp NUMBER_3             &kp EQUAL  &kp EQUAL  &kp N1                    &kp N2                      &kp N3                  &kp FSLH
-                                                  &kp PERIOD                 &trans                   &kp ENTER  &kp ENTER  &kp N0                    &kp DOT
+                                                  &kp NUMBER_0               &kp PERIOD               &trans     &kp ENTER  &kp N0                    &kp DOT
             >;
         };
 
         Symbol {
             bindings = <
-&kp GRAVE      &trans           &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans           &trans             &trans         &trans
+&kp GRAVE      &kp HASH         &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans           &trans             &trans         &trans
 &kp SEMICOLON  &kp PERCENT      &kp AMPERSAND  &kp LBKT              &kp RBKT               &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_COMMAND
 &kp BACKSLASH  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans           &trans             &trans         &trans
                                 &trans         &trans                &trans                 &trans  &trans           &trans
-            >;
-        };
-
-        Bluetooth {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
-                &trans  &trans  &trans  &trans        &trans          &trans
             >;
         };
 
@@ -63,6 +54,15 @@
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans     &trans     &trans     &trans     &trans  &trans  &trans          &trans          &trans           &trans
                       &trans     &trans     &trans  &trans  &trans          &trans
+            >;
+        };
+
+        Bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
+                &trans  &trans  &trans  &trans        &trans          &trans
             >;
         };
     };

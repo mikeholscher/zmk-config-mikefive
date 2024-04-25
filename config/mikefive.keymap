@@ -18,7 +18,7 @@
         };
     };
 
-behaviors {
+    behaviors {
         as: as {
             compatible = "zmk,behavior-hold-tap";
             label = "AS";
@@ -31,67 +31,51 @@ behaviors {
         };
     };
 
-    macros {
-        NumEnterOut: NumEnterOut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER &to 0>;
-            label = "NUMENTEROUT";
-        };
-
-        NumSpaceOut: NumSpaceOut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &to 0>;
-            label = "NUMSPACEOUT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-  &as LS(Q) Q  &as LS(W) W  &as LS(F) F   &as LS(P) P  &as LS(B) B    &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
-  &as LS(A) A  &as LS(R) R  &as LS(S) S   &as LS(T) T  &as LS(G) G    &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
-  &as LS(Z) Z  &as LS(X) X  &as LS(C) C   &as LS(D) D  &as LS(V) V    &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                            &lt 4 ESCAPE  &lt 3 SPACE  &lt 1 TAB      &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+&as LS(Q) Q  &as LS(W) W  &as LS(F) F   &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
+&as LS(A) A  &as LS(R) R  &as LS(S) S   &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
+&as LS(Z) Z  &as LS(X) X  &as LS(C) C   &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
+                          &lt 4 ESCAPE  &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 
         Number {
             bindings = <
-  &kp EQUAL     &kp MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &trans  &trans           &trans             &trans         &trans
-  &kp ASTERISK  &kp PLUS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
-  &kp N0        &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans           &trans             &trans         &trans
-                            &trans        &trans        &trans          &trans  &trans           &trans
+&kp EQUAL     &kp MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans           &trans             &trans         &trans
+&kp ASTERISK  &kp PLUS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp N0        &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans           &trans             &trans         &trans
+                          &trans        &trans        &trans        &trans  &trans           &trans
             >;
         };
 
         Symbol {
             bindings = <
-  &kp EQUAL     &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN  &kp CARET    &kp DOLLAR  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
-  &kp ASTERISK  &kp PLUS   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE     &kp TILDE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-  &kp GRAVE     &kp UNDER  &kp HASH              &kp AT_SIGN       &kp PRCNT    &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-                           &trans                &trans            &trans       &trans      &trans                &trans
+&kp EQUAL     &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN  &kp CARET  &kp DOLLAR  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&kp ASTERISK  &kp PLUS   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE   &kp TILDE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&kp GRAVE     &kp UNDER  &kp HASH              &kp AT_SIGN       &kp PRCNT  &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
+                         &trans                &trans            &trans     &trans      &trans                &trans
             >;
         };
 
         Navigation {
             bindings = <
-  &kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &trans     &trans  &trans          &kp UP_ARROW    &trans           &trans
-  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp TAB    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans     &trans  &trans          &trans          &trans           &trans
-                              &trans            &trans          &trans     &trans  &trans          &trans
+&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &trans   &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp TAB  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans   &trans  &trans          &trans          &trans           &trans
+                            &trans            &trans          &trans   &trans  &trans          &trans
             >;
         };
 
         Bluetooth {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-  &trans  &trans  &trans  &trans  &trans    &trans        &trans          &trans        &trans        &trans
-  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
-                  &trans  &trans  &trans    &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset    &bootloader
+                &trans  &trans  &trans  &trans        &trans          &trans
             >;
         };
     };

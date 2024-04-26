@@ -29,6 +29,15 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
         };
+
+        sm: sm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SM";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -39,25 +48,25 @@
 &as LS(Q) Q  &as LS(W) W  &as LS(F) F   &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
 &as LS(A) A  &as LS(R) R  &as LS(S) S   &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
 &as LS(Z) Z  &as LS(X) X  &as LS(C) C   &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                          &lt 4 ESCAPE  &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+                          &lt 4 ESCAPE  &lt 3 SPACE  &sm 1 1      &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 
         Number {
             bindings = <
-&kp EQUAL     &kp MINUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans           &trans             &trans         &trans
-&kp ASTERISK  &kp PLUS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&kp N0        &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans           &trans             &trans         &trans
-                          &trans        &trans        &trans        &trans  &trans           &trans
+&kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans  &trans           &trans             &trans         &trans
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &trans  &trans           &trans             &trans         &trans
+                            &kp NUMBER_0  &kp PERIOD    &trans     &trans  &trans           &trans
             >;
         };
 
         Symbol {
             bindings = <
-&kp EQUAL     &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN  &kp CARET  &kp DOLLAR  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
-&kp ASTERISK  &kp PLUS   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE   &kp TILDE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&kp GRAVE     &kp UNDER  &kp HASH              &kp AT_SIGN       &kp PRCNT  &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-                         &trans                &trans            &trans     &trans      &trans                &trans
+&kp EQUAL     &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN  &kp CARET  &kp DOLLAR     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&kp ASTERISK  &kp PLUS   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE   &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&kp GRAVE     &kp UNDER  &kp HASH              &kp AT_SIGN       &kp PRCNT  &kp TILDE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
+                         &trans                &trans            &trans     &trans         &trans                &trans
             >;
         };
 

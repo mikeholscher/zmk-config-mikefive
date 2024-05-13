@@ -17,13 +17,6 @@
             layers = <0>;
             timeout-ms = <50>;
         };
-
-        System {
-            bindings = <&mo 4>;
-            key-positions = <32 33>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -39,22 +32,6 @@
         };
     };
 
-    macros {
-        screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_4))>;
-            label = "SCREENSHOT";
-        };
-
-        screenvideo: screenvideo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_5))>;
-            label = "SCREENVIDEO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,7 +40,7 @@
 &as LS(Q) Q  &as LS(W) W  &as LS(F) F  &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
 &as LS(A) A  &as LS(R) R  &as LS(S) S  &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
 &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                          &kp ESCAPE   &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+                          &lt 4 ESC    &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -87,10 +64,10 @@
 
         Navigation {
             bindings = <
-&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &screenshot   &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &screenvideo  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans        &trans  &trans          &trans          &trans           &trans
-                            &trans            &trans          &trans        &trans  &trans          &trans
+&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp LG(LS(NUMBER_4))  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(N5))        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans                &trans  &trans          &trans          &trans           &trans
+                            &trans            &trans          &trans                &trans  &trans          &trans
             >;
         };
 

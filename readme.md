@@ -27,8 +27,12 @@ Find all noteworthy project developments here.
 
 I will update this page when there is news, and post on r/ergomechkeyboards too.
 
+### 2024-05-06 
+kbd.news was kind enough to [repost](https://kbd.news/Mikefive-a-Kailh-PG1316S-keyboard-2366.html) my Reddit post on their website!
+
+
 ### 2024-04-28 
-After completing the build on Wednesday 24th of April and working with it for a couple days, I decided to make a post on r/ergomechkeyboards. 
+After completing the build on Wednesday 24th of April and working with it for a couple days, I decided to make a [post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1cfg3vr/mikefive_a_kailh_pg1316_keyboard/) on r/ergomechkeyboards. 
 It became a really long write-up, as I wanted to share as many details as possible.
 Thank you all for your flattering replies! They really gave me energy to continue the project and make sure the keyboard will eventually get in the hands of people that want it.
-[Link to Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1cfg3vr/mikefive_a_kailh_pg1316_keyboard/)
+

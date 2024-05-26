@@ -27,7 +27,7 @@ Find all noteworthy project developments here.
 
 I will update this page when there is news, and post on r/ergomechkeyboards too.
 
-### 2024-05-26
+### 2024-05-26 KiCad footprint now available!
 I received a message from someone that was able to order some switches, and asked if I could share the footprint. The KiCad 8.0 footprint is in the [files folder](/files), and looks like this:
 
 ![](images/PG1316S_footprint_mikeholscher.png)
@@ -42,11 +42,11 @@ Some explanation:
 
 Kailh also made a [product page](https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-ultra-thin-notebook-switch.html) for the PG1316S switch, including [spec sheet](https://www.kailhswitch.com/uploads/15927/files/CPG1316S01D02-data-sheet.pdf?rnd=569) where I based the footprint on. I did some further measurements on the physical switch to complete some details such as the space underneath.
 
-### 2024-05-06 
+### 2024-05-06 kbd.news reposted!
 kbd.news was kind enough to [repost](https://kbd.news/Mikefive-a-Kailh-PG1316S-keyboard-2366.html) my Reddit post on their website!
 
 
-### 2024-04-28 
+### 2024-04-28 Hello world :)
 After completing the build on Wednesday 24th of April and working with it for a couple days, I decided to make a [post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1cfg3vr/mikefive_a_kailh_pg1316_keyboard/) on r/ergomechkeyboards. 
 It became a really long write-up, as I wanted to share as many details as possible.
 Thank you all for your flattering replies! They really gave me energy to continue the project and make sure the keyboard will eventually get in the hands of people that want it.

@@ -27,6 +27,21 @@ Find all noteworthy project developments here.
 
 I will update this page when there is news, and post on r/ergomechkeyboards too.
 
+### 2024-05-26
+I received a message from someone that was able to order some switches, and asked if I could share the footprint. The KiCad 8.0 footprint is in the files folder, and looks like this:
+
+![](images\PG1316S_footprint_mikeholscher.png)
+
+Some explanation:
+- The outer, biggest square is the 16x16mm keycap.
+- The slighty smaller square is the switch 'frame' size.
+- The two small circles are holes for the allignment pins on the switch.
+- Pads 1 and 2 are the switch pads.
+- Pads 3 are the SMD mounting points for the switch frame. NOTE: I pladed vias in these pads in the PCB to give the switch a more secure connection to the PCB. (I hope) this way the switch and connect to both sides of the PCB instead of only the top layer. I connected all pads 3 to GND in the switch diagram and schematic.
+- The weird shape in the top half is the available space under the switch for components. I placed my diodes there in the mikefive.
+
+Kailh also made a [product page](https://www.kailhswitch.com/mechanical-keyboard-switches/kailh-ultra-thin-notebook-switch.html) for the PG1316S switch, including [spec sheet](https://www.kailhswitch.com/uploads/15927/files/CPG1316S01D02-data-sheet.pdf?rnd=569) where I based the footprint on. I did some further measurements on the physical switch to complete some details such as the space underneath.
+
 ### 2024-05-06 
 kbd.news was kind enough to [repost](https://kbd.news/Mikefive-a-Kailh-PG1316S-keyboard-2366.html) my Reddit post on their website!
 

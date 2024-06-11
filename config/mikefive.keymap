@@ -50,17 +50,17 @@
             bindings = <
 &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0      &none   &none            &none              &none          &none
 &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &none   &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS   &none   &none            &none              &none          &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS   &none   &none            &trans             &trans         &trans
                      &trans        &trans        &trans      &trans  &trans           &trans
             >;
         };
 
         Symbol {
             bindings = <
-&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH         &kp EQUAL  &kp GRAVE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN       &kp PLUS   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &none       &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-                         &trans         &trans            &trans     &trans      &trans                &trans
+&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH         &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
+&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN       &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
+&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
+                         &trans         &trans            &trans     &trans       &trans                &trans
             >;
         };
 

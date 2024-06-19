@@ -25,7 +25,10 @@ Next to that, another unexpected opportunity arose, which I will definitly screa
 
 Find all noteworthy project developments here. 
 
-I will update this page when there is news, and post on r/ergomechkeyboards too.
+I will update this page when there is news, and post on r/ergomechkeyboards or r/olkb too.
+
+### 2024-06-19 Lighter switches are installed!
+I received the lighter prototype switches from Kailh and installed them in the mikefive. They feel much better and are a lot more quiet. I uploaded a small video update on [Reddit](https://www.reddit.com/r/olkb/comments/1djruze/new_lighter_kailh_pg1316s_switches_in_the_mikefive/). I am planning on making an extensive video update soon, with much more news to share!
 
 ### 2024-05-26 KiCad footprint now available!
 I received a message from someone that was able to order some switches, and asked if I could share the footprint. The KiCad 8.0 footprint is in the [files folder](/files), and looks like this:

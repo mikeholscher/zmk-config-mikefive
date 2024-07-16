@@ -19,6 +19,12 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        System_Layer {
+            bindings = <&mo 4>;
+            key-positions = <32 30>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -42,7 +48,7 @@
 &as LS(Q) Q  &as LS(W) W  &as LS(F) F  &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
 &as LS(A) A  &as LS(R) R  &as LS(S) S  &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
 &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                          &lt 4 ESC    &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+                          &kp ESCAPE   &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 

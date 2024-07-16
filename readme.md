@@ -28,7 +28,7 @@ Find all noteworthy project developments here.
 I will update this page when there is news, and post on r/ergomechkeyboards or r/olkb too.
 
 ### 2024-07-16 3D CAD file of PG1316S switch now available!
-I received a lot of questions about the availability of a 3D CAD file of the switch and keycap of the PG1316S. Well, I asked Kailh if I could share, and I can! You can find it in the [files folder](/files). I also used the switch model to render images like below and select matching materials before I had the prototype produced.
+I received a lot of questions about the availability of a 3D CAD file of the switch and keycap of the PG1316S. Well, I asked Kailh if I could share, and I can! You can find it in the [files folder](/files). I also used the switch model to render images like below and select matching materials before I had the prototype produced. NOTE: This is the original 3D CAD file I received from Kailh. I noticed the switch dimensions are spot-on and the inside of the keycap is too but the outside of the keycap is too small. In reality, the keycap is 16.25mm vertically and 16.05mm horizontally.
 
 ![](images/mikefive%20Rendering%20Front.jpg)
 

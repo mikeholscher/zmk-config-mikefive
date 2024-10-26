@@ -28,7 +28,9 @@ Find all noteworthy project developments here.
 I will update this page when there is news, and post on r/ergomechkeyboards or r/olkb too.
 
 ### 2024-10-26 I made custom keycaps for the PG1316S switch!
-You can read all about in this [Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1gcibfw/custom_keycaps_for_the_ultralow_kailh_pg1316s/), where I made a write-up in the comments if you would like to read about all the details.
+You can read all about in this [Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1gcibfw/custom_keycaps_for_the_ultralow_kailh_pg1316s/), where I made a write-up in the comments if you would like to read about all the details. I resin printed them myself. The CAD models will be on this site soon so everybody can print them, after I verified they also fit well using when ordering them from a commercial print service.
+
+![](images/mikefivekeycap%20flats.jpg)
 
 ### 2024-07-18 Introducing the even smaller PG1316M, 3D CAD also available!
 I was informed by a Reddit member about the existence of the PG1316M. Yes, an M instead of an S at the end. This is a lower height switch, often used as Fn-row keys. I don't have a physical sample yet, but based on the keycap size in CAD, I think the keycap size will be around 16x12mm, compared to the 16x16mm PG1316S. I learned from Kailh, that these will also become available! Again, I am free to share the 3D CAD file, really awesome! You can also find the PDF spec sheet in the folder, as this M version does not seem to be on their website yet. I think I will soon add the KiCad footprint for the PG1316M as well!

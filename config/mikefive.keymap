@@ -6,10 +6,6 @@
 &led_strip { chain-length = <1>; };
 
 / {
-    chosen { zmk,matrix-transform = &default_transform; };
-};
-
-/ {
     combos {
         compatible = "zmk,combos";
 

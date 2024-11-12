@@ -1,10 +1,14 @@
 #include "mikefive-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
+&physical_layout0 {
+    transform = <&matrix_transform>;
+};
+
 / {
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &physical_layout0;
     };
 
     default_kscan: kscan {

@@ -17,7 +17,7 @@
         };
 
         System_Layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <32 30>;
             layers = <0>;
         };
@@ -44,7 +44,16 @@
 &as LS(Q) Q  &as LS(W) W  &as LS(F) F  &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
 &as LS(A) A  &as LS(R) R  &as LS(S) S  &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
 &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                          &kp ESCAPE   &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
+                          &kp ESCAPE   &lt 4 SPACE  &lt 2 TAB    &lt 3 ENTER  &kp BACKSPACE  &kp DEL
+            >;
+        };
+
+        Rupestris_Base {
+            bindings = <
+&as LS(Z) Z  &as LS(L) L                     &as LS(R) R  &as LS(K) K  &as LS(F) F  &as LS(V) V  &as LS(W) W    &as LS(U) U          &as LS(O) O       &as LS(Y) Y
+&as LS(S) S  &as LS(T) T                     &as LS(N) N  &as LS(D) D  &as LS(P) P  &as LS(M) M  &as LS(G) G    &as LS(E) E          &as LS(A) A       &as LS(I) I
+&as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
+                                             &kp ESCAPE   &lt 4 SPACE  &lt 2 TAB    &lt 3 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -78,18 +87,9 @@
         System {
             bindings = <
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SPD                  &rgb_ug RGB_SPI                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
-&rgb_ug RGB_ON   &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFR                  &rgb_ug RGB_EFF                    &to 0         &to 5           &none           &none         &none
+&rgb_ug RGB_ON   &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFR                  &rgb_ug RGB_EFF                    &tog 0        &tog 1          &none           &none         &none
 &rgb_ug RGB_OFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(206,100,50)  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &sys_reset    &bootloader
                                   &trans           &trans                           &trans                             &trans        &trans          &trans
-            >;
-        };
-
-        Rupestris_Base {
-            bindings = <
-&as LS(Z) Z  &as LS(L) L                     &as LS(R) R  &as LS(K) K  &as LS(F) F  &as LS(V) V  &as LS(W) W    &as LS(U) U          &as LS(O) O       &as LS(Y) Y
-&as LS(S) S  &as LS(T) T                     &as LS(N) N  &as LS(D) D  &as LS(P) P  &as LS(M) M  &as LS(G) G    &as LS(E) E          &as LS(A) A       &as LS(I) I
-&as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                                             &kp ESCAPE   &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
     };

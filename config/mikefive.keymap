@@ -12,14 +12,14 @@
         capsword {
             bindings = <&caps_word>;
             key-positions = <13 16>;
-            layers = <0>;
+            layers = <0 1>;
             timeout-ms = <50>;
         };
 
         System_Layer {
             bindings = <&mo 5>;
             key-positions = <32 30>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 

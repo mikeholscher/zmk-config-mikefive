@@ -1,5 +1,5 @@
-#include "mikefive-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "mikefive-layouts.dtsi"
 
 &physical_layout0 {
     transform = <&matrix_transform>;
@@ -7,13 +7,13 @@
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
     };
 
-    default_kscan: kscan {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan";
+        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
@@ -35,7 +35,7 @@
               <&pro_micro 20 GPIO_ACTIVE_HIGH>;
     };
 
-    default_transform: matrix_transform {
+    matrix_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;

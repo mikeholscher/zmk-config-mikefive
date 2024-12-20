@@ -6,9 +6,9 @@ It's wireless and five millimeters thick. Here's a picture of it:
 
 ![](images/mikefive%20done2.jpg)
 
-The keyboard above is completely custom designed around Kailh PG1316S switches. 
-These switches I got unexpectedly offered by Kailh when ordering other stuff. 
-They do not seem to be on shelves yet to buy. Read on to learn more.
+The keyboard above is completely custom-designed around Kailh PG1316S switches. 
+These switches I got unexpectedly offered by Kailh when ordering other stuff in early 2024. 
+I think this build sparked some ultra-low enthusiasm in the community as multiple shops are now carrying them. Go build! 
 
 ## Where are the files?!
 
@@ -19,7 +19,7 @@ Most commits here will probably be me updating my keymap :)
 
 Maybe I was a fool to show it to the world already, while I only built a single prototype. 
 Because, like with most first prototypes, I found stuff that needs to be improved before other people start building. 
-Next to that, another unexpected opportunity arose, which I will definitly scream from the rooftops about when it's more concrete...
+Next to that, another unexpected opportunity arose, which I will definitely scream from the rooftops about when it's more concrete...
 
 ## Devlog
 
@@ -28,7 +28,9 @@ Find all noteworthy project developments here.
 I will update this page when there is news, and post on r/ergomechkeyboards or r/olkb too.
 
 ### 2024-10-26 I made custom keycaps for the PG1316S switch!
-You can read all about in this [Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1gcibfw/custom_keycaps_for_the_ultralow_kailh_pg1316s/), where I made a write-up in the comments if you would like to read about all the details. I resin printed them myself. The CAD models will be on this site soon so everybody can print them, after I verified they also fit well using when ordering them from a commercial print service.
+You can read all about in this [Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1gcibfw/custom_keycaps_for_the_ultralow_kailh_pg1316s/), where I made a write-up in the comments if you would like to read about all the details. I resin-printed them myself. The CAD models will be on this site soon so everybody can print them, after I verified they also fit well using when ordering them from a commercial print service.
+
+Small update: I received a small batch of my keycap prints from JLC, but they have more play to them than my own, and I don't want people to be disappointed when printing my caps. Tolerances are very small on this cap and switch combination. Stay tuned for updates! I am working on it.
 
 ![](images/mikefivekeycap%20flats.jpg)
 

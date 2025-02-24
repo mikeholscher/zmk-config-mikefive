@@ -27,6 +27,9 @@ Find all noteworthy project developments here.
 
 I will update this page when there is news, and post on r/ergomechkeyboards or r/olkb too.
 
+### 2025-02-24 I uploaded the keycap files!
+You can now find the keycap STEP files in the [keycap folder](/files/custom-keycaps). Don't forget to read the readme in that folder.
+
 ### 2024-10-26 I made custom keycaps for the PG1316S switch!
 You can read all about in this [Reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1gcibfw/custom_keycaps_for_the_ultralow_kailh_pg1316s/), where I made a write-up in the comments if you would like to read about all the details. I resin-printed them myself. The CAD models will be on this site soon so everybody can print them, after I verified they also fit well using when ordering them from a commercial print service.
 

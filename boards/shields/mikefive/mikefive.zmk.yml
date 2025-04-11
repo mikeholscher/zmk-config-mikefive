@@ -1,6 +1,6 @@
 file_format: "1"
-id: mikecinq
-name: MIKECINQ
+id: mikefive
+name: MIKEFIVE
 type: shield
 url: https://github.com/mikeholscher/zmk-config-mikefive
 requires: [pro_micro]
